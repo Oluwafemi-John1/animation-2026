@@ -1,0 +1,52 @@
+.box {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: box 6s infinite; */
+}
+
+@keyframes box {
+    0% {
+        border: 20px solid red;
+    }
+
+    25% {
+        border: 20px solid green;
+        transform: translateX(300px);
+    }
+
+    50% {
+        border: 20px solid blue;
+        transform: translate(300px, 200px);
+    }
+
+    75% {
+        border: 20px solid yellow;
+        transform: translate(-20px, 200px);
+    }
+
+    100% {
+        border: 20px solid peru;
+        transform: translate(-20px, -20px);
+    }
+}
+
+.lorry {
+    transform: translate(-260px, 200px);
+    /* position: relative; */
+    animation: motor 4s linear infinite;
+    /* left: -300px; */
+    /* top: 200px; */
+}
+
+@keyframes motor {
+    0% {
+        transform: translate(-260px, 200px);
+        /* left: -300px; */
+        /* top: 200px; */
+    }
+
+    100% {
+        transform: translate(900px, 200px);
+        /* left: 300px; */
+        /* top: 200px; */
+    }
+}
